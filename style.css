@@ -14,8 +14,18 @@ a {
 }
 
 .navbar {
+    font-size: small;
     box-shadow: 0 1px 2px 2px #DFDFDE;
 }
+
+.navbar .container-fluid .navbar-toggler .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28166, 75, 42, 1%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='4' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+}
+
+.navbar .container-fluid .navbar-toggler {
+    color: #F9F9F9;
+    border: 1px solid #F9F9F9;
+} 
 
 .container-fluid {
     margin: 0 7rem;
@@ -60,7 +70,15 @@ a {
 
 .filter-bar {
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
+    align-items: center;
+}
+
+.checkbox-div {
+    padding: 0 0.5rem; 
+    display: flex; 
+    justify-content: space-around; 
     align-items: center;
 }
 
@@ -89,6 +107,62 @@ a {
 .card {
     width: 15rem; 
     height: fit-content;
+}
+
+.btn-request-book {
+    padding: 5px;
+    background-color: white;
+    color: #A64B2A;
+    font-size: small;
+    border: 1px solid #A64B2A;
+    border-radius: 3px;
+}
+
+.card-mobile {
+    display: none;
+    padding: 0.5rem;
+}
+
+.card-mobile-img {
+    width: 10rem;
+    margin-right: 0.5rem;
+    box-shadow: 0 3px 3px 3px #DFDFDE;
+}
+
+.card-mobile-body {
+    font-size: large;
+    width: 11rem;
+    margin-left: 0.5rem;
+}
+
+.card-mobile-desc {
+    text-align: center;
+    border: 2px solid #DFDFDE;
+    padding: 0 0.5rem;
+}
+
+.btn-mobile-request {
+    margin: 0.3rem 0;
+    padding: 0.3rem;
+    display: block;
+    width: 100%;
+    background-color: #82954B;
+    color: white;
+    border: none;
+    border-radius: 3px;
+    box-shadow: 0 3px 3px 3px #DFDFDE;
+}
+
+.btn-mobile-details {
+    margin: 0.3rem 0;
+    padding: 0.3rem;
+    display: block;
+    width: 100%;
+    background-color: #A64B2A;
+    color: white;
+    border: none;
+    border-radius: 3px;
+    box-shadow: 0 3px 3px 3px #DFDFDE;
 }
 
 .footer {
@@ -120,10 +194,6 @@ a {
 }
 
 @media only screen and (max-width: 990px) {
-    .filter-bar {
-        flex-direction: column;
-    }
-
     .sort-section {
         margin: 1rem 3rem;
     }
@@ -164,6 +234,30 @@ a {
 
     .footer {
         margin: 1.5rem;
+    }
+}
+
+@media only screen and (max-width: 620px) {
+    .card {
+        display: none;
+    }
+
+    .catalog-section {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    .card-mobile {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+@media only screen and (max-width: 560px) {
+    .div1 {
+        padding-bottom: 0.5rem;
     }
 }
 

@@ -90,45 +90,49 @@
     <!-- FILTER -->
     <div class="filter-section">
         <div class="filter-bar">
-            <div class="year" style="padding: 0 0.5rem;">
-                <p>Year</p>
-                <div class="dropdown">
-                    <button class="form-control dropdown-toggle" style="width: 150px;" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
-                      All
-                    </button>
-                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-                      <li><a class="dropdown-item" href="#">2020</a></li>
-                      <li><a class="dropdown-item" href="#">2021</a></li>
-                      <li><a class="dropdown-item" href="#">2022</a></li>
-                    </ul>
-                  </div>
+            <div class="div1" style="display: flex; justify-content: center;">
+                <div class="year" style="padding: 0 0.5rem;">
+                    <p>Year</p>
+                    <div class="dropdown">
+                        <button class="form-control dropdown-toggle" style="width: 150px;" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                          All
+                        </button>
+                        <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                          <li><a class="dropdown-item" href="#">2020</a></li>
+                          <li><a class="dropdown-item" href="#">2021</a></li>
+                          <li><a class="dropdown-item" href="#">2022</a></li>
+                        </ul>
+                      </div>
+                </div>
+                <div class="branch" style="padding: 0 0.5rem;">
+                    <p>Branch</p>
+                    <div class="dropdown">
+                        <button class="form-control dropdown-toggle" style="width: 150px;" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                          All
+                        </button>
+                        <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                          <li><a class="dropdown-item" href="#">Fiction</a></li>
+                          <li><a class="dropdown-item" href="#">Food</a></li>
+                          <li><a class="dropdown-item" href="#">Comic</a></li>
+                        </ul>
+                      </div>
+                </div>
             </div>
-            <div class="branch" style="padding: 0 0.5rem;">
-                <p>Branch</p>
-                <div class="dropdown">
-                    <button class="form-control dropdown-toggle" style="width: 150px;" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
-                      All
-                    </button>
-                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-                      <li><a class="dropdown-item" href="#">Fiction</a></li>
-                      <li><a class="dropdown-item" href="#">Food</a></li>
-                      <li><a class="dropdown-item" href="#">Comic</a></li>
-                    </ul>
-                  </div>
-            </div>
-            <div class="checkbox-div" style="padding: 0 0.5rem; display: flex; justify-content: space-around; align-items: center;">
-                <input type="checkbox" style="width: 15px; height: 15px;">
-                <p style="padding: 0 1rem 0 0.5rem;">Available Only</p>
-            </div>
-            <div class="filter-btn-div" style="padding-left: 1rem;">
-                <button type="button" class="filter-btn">Filter</button>
+            <div class="div2" style="display: flex; justify-content: center;">
+                <div class="checkbox-div">
+                    <input type="checkbox" style="width: 15px; height: 15px;">
+                    <p style="padding: 0 1rem 0 0.5rem;">Available Only</p>
+                </div>
+                <div class="filter-btn-div" style="padding-left: 1rem;">
+                    <button type="button" class="filter-btn">Filter</button>
+                </div>
             </div>
         </div>
     </div>
 
     <!-- SORT -->
     <div class="sort-section">
-        <p>Total Books: <span style="color: brown; font-weight: bold">4</span></p>
+        <p>Total Books: <span style="color: #A64B2A; font-weight: bold">4</span></p>
         <div class="sort-btn-div">
             <div class="dropdown">
                 <button class="form-control dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
@@ -151,8 +155,8 @@
               <p style="font-size: small;"><u>Range</u> <strong>by</strong> David Epstein</p>
               <p style="font-size: small;"><strong>Owner: </strong>jay</p>
               <div style="display: flex; justify-content: space-between; align-items: center;">
-                <button type="button" class="btn btn-outline-dark btn-sm">Request Book</button>
-                <i class="fa-solid fa-circle-arrow-right fa-xl"></i>
+                <button type="button" class="btn-request-book">Request Book</button>
+                <i class="fa-solid fa-circle-arrow-right fa-xl " style='color:#a64b2a;'></i>
               </div>
             </div>
         </div>
@@ -162,19 +166,19 @@
                 <p style="font-size: small;"><u>The Kite Runner</u> <strong>by</strong> Khalid Hosseini</p>
                 <p style="font-size: small;"><strong>Owner: </strong>jay</p>
                 <div style="display: flex; justify-content: space-between; align-items: center;">
-                    <button type="button" class="btn btn-outline-dark btn-sm">Request Book</button>
-                    <i class="fa-solid fa-circle-arrow-right fa-xl"></i>
+                    <button type="button" class="btn-request-book">Request Book</button>
+                    <i class="fa-solid fa-circle-arrow-right fa-xl " style='color:#a64b2a;'></i>
                 </div>
               </div>
         </div>
         <div class="card">
             <img src="images/wish.jpeg" class="card-img-top" alt="range">
             <div class="card-body">
-                <p style="font-size: small;"><u>Wish I Could Tell You</u> <strong>by</strong> Durjoy Dutta</p>
+                <p style="font-size: small;"><u>Wish I Could Tell You</u> <strong>by</strong> Durjoy Datta</p>
                 <p style="font-size: small;"><strong>Owner: </strong>jay</p>
                 <div style="display: flex; justify-content: space-between; align-items: center;">
-                    <button type="button" class="btn btn-outline-dark btn-sm">Request Book</button>
-                    <i class="fa-solid fa-circle-arrow-right fa-xl"></i>
+                    <button type="button" class="btn-request-book">Request Book</button>
+                    <i class="fa-solid fa-circle-arrow-right fa-xl " style='color:#a64b2a;'></i>
                 </div>
               </div>
         </div>
@@ -184,9 +188,62 @@
                 <p style="font-size: small;"><u>Think Like A Monk</u> <strong>by</strong> Jay Shetty</p>
                 <p style="font-size: small;"><strong>Owner: </strong>jay</p>
                 <div style="display: flex; justify-content: space-between; align-items: center;">
-                    <button type="button" class="btn btn-outline-dark btn-sm">Request Book</button>
-                    <i class="fa-solid fa-circle-arrow-right fa-xl"></i>
+                    <button type="button" class="btn-request-book">Request Book</button>
+                    <i class="fa-solid fa-circle-arrow-right fa-xl " style='color:#a64b2a;'></i>
                 </div>
+              </div>
+        </div>
+        <!-- MOBILE-CARDS -->
+        <div class="card-mobile">
+            <div class="card-mobile-img">
+                <img src="images/range.jpeg" class="card-img-top" alt="range">
+            </div>
+            <div class="card-mobile-body">
+                <div class="card-mobile-desc">
+                    <p><strong>Range</strong> by <strong>David Epstein</strong></p><br>
+                    <p>Owner: jay</p>
+                </div>
+                <button type="button" class="btn-mobile-request">Request Book</button>
+                <button type="button" class="btn-mobile-details">View Details</button>
+              </div>
+        </div>
+        <div class="card-mobile">
+            <div class="card-mobile-img">
+                <img src="images/kite.jpeg" class="card-img-top" alt="range">
+            </div>
+            <div class="card-mobile-body">
+                <div class="card-mobile-desc">
+                    <p><strong>The Kite Runner</strong> by <strong>Khaled Hosseini</strong></p><br>
+                    <p>Owner: jay</p>
+                </div>
+                <button type="button" class="btn-mobile-request">Request Book</button>
+                <button type="button" class="btn-mobile-details">View Details</button>
+              </div>
+        </div>
+        <div class="card-mobile">
+            <div class="card-mobile-img">
+                <img src="images/wish.jpeg" class="card-img-top" alt="range">
+            </div>
+            <div class="card-mobile-body">
+                <div class="card-mobile-desc">
+                    <p><strong>Wish I Could Tell You</strong> by <strong>Durjoy Datta</strong></p><br>
+                    <p>Owner: jay</p>
+                </div>
+                <button type="button" class="btn-mobile-request">Request Book</button>
+                <button type="button" class="btn-mobile-details">View Details</button>
+              </div>
+        </div>
+        <div class="card-mobile">
+            <div class="card-mobile-img">
+                <img src="images/monk.jpeg" class="card-img-top" alt="range">
+            </div>
+            <div class="card-mobile-body">
+                <div class="card-mobile-desc">
+                    <p><strong>Think Like A Monk</strong> by <strong>Jay Shetty</strong></p><br>
+                    <p>Owner: jay</p>
+                </div>
+                <button type="button" class="btn-mobile-request">Request Book</button>
+                <button type="button" class="btn-mobile-details">View Details</button>
               </div>
         </div>
     </div>
